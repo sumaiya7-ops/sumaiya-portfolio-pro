@@ -207,29 +207,65 @@ export default function Hero() {
     </div>
         {/* Floating Tech Pills */}
 
-<div className="absolute -top-6 right-8 rounded-full border border-white/10 bg-slate-900/70 px-4 py-2 shadow-xl backdrop-blur-xl">
+<motion.div
+  animate={{ y: [0, -8, 0] }}
+  transition={{
+    duration: 3,
+    repeat: Infinity,
+    ease: "easeInOut",
+    delay: 0,
+  }}
+  className="absolute -top-6 right-8 rounded-full border border-white/10 bg-slate-900/80 px-4 py-2 shadow-xl backdrop-blur-xl"
+>
   <span className="text-sm font-semibold text-white">
     ⚛ React
   </span>
-</div>
+</motion.div>
 
-<div className="absolute top-1/4 -left-12 rounded-full border border-white/10 bg-slate-900/70 px-4 py-2 shadow-xl backdrop-blur-xl">
+<motion.div
+  animate={{ y: [0, -8, 0] }}
+  transition={{
+    duration: 3,
+    repeat: Infinity,
+    ease: "easeInOut",
+    delay: 0.5,
+  }}
+  className="absolute top-1/4 -left-12 rounded-full border border-white/10 bg-slate-900/80 px-4 py-2 shadow-xl backdrop-blur-xl"
+>
   <span className="text-sm font-semibold text-white">
     ▲ Next.js
   </span>
-</div>
+</motion.div>
 
-<div className="absolute bottom-1/3 -right-12 rounded-full border border-white/10 bg-slate-900/70 px-4 py-2 shadow-xl backdrop-blur-xl">
+<motion.div
+  animate={{ y: [0, -8, 0] }}
+  transition={{
+    duration: 3,
+    repeat: Infinity,
+    ease: "easeInOut",
+    delay: 1,
+  }}
+  className="absolute bottom-1/3 -right-12 rounded-full border border-white/10 bg-slate-900/80 px-4 py-2 shadow-xl backdrop-blur-xl"
+>
   <span className="text-sm font-semibold text-white">
     TS TypeScript
   </span>
-</div>
+</motion.div>
 
-<div className="absolute bottom-6 left-2 rounded-full border border-white/10 bg-slate-900/70 px-4 py-2 shadow-xl backdrop-blur-xl">
+<motion.div
+  animate={{ y: [0, -8, 0] }}
+  transition={{
+    duration: 3,
+    repeat: Infinity,
+    ease: "easeInOut",
+    delay: 1.5,
+  }}
+  className="absolute  bottom-6 left-2 rounded-full border border-white/10 bg-slate-900/80 px-4 py-2 shadow-xl backdrop-blur-xl"
+>
   <span className="text-sm font-semibold text-white">
     🍃 MongoDB
   </span>
-</div>
+</motion.div>
 
 
     {/* Floating Badge */}
