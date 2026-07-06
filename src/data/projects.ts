@@ -9,7 +9,7 @@ export const projects = [
     description:
       "A modern full-stack storytelling platform with authentication, Stripe payments, dashboards, and responsive user experience.",
 
-    image: "https://placehold.co/1200x700/111827/ffffff?text=Fable",
+     image: "https://i.postimg.cc/cC6WP5Cr/p.png",
 
     tech: [
       "Next.js",

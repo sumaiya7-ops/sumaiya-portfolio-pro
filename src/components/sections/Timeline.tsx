@@ -69,6 +69,7 @@ export default function Timeline() {
     src="/images/education/jkkniu.jpg"
     alt="JKKNIU"
     fill
+    sizes="(max-width: 768px) 100vw, 800px"
    className="object-cover object-[center_20%]"
   />
 
@@ -186,6 +187,7 @@ LLB Honours • 2025 – Present
     src="/images/education/eng.png"
     alt="JKKNIU"
     fill
+    sizes="(max-width: 768px) 100vw, 800px"
    className="object-cover object-[center_20%]"
   />
 
@@ -280,6 +282,7 @@ TypeScript, MongoDB and modern UI systems.
     src="/images/education/bgwc.jpg"
     alt="BGWC"
     fill
+    sizes="(max-width: 768px) 100vw, 800px"
     className="object-cover object-[center_20%]"
   />
 
