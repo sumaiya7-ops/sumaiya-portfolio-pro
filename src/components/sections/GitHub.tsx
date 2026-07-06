@@ -110,7 +110,7 @@ const repos = await getPinnedRepos();
 </div>
 
      
-<div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+<div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
   <GitHubStatCard
     title="Repositories"
     value={user.public_repos.toString()}
@@ -123,11 +123,6 @@ const repos = await getPinnedRepos();
     icon={<FiGithub />}
   />
 
-  <GitHubStatCard
-    title="Following"
-    value={user.following.toString()}
-    icon={<SiGit />}
-  />
 
   <GitHubStatCard
    title="Public Gists"
