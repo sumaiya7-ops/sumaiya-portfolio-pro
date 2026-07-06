@@ -18,10 +18,18 @@ export async function getGithubUser() {
 
   console.log("Status:", res.status);
 
-  if (!res.ok) {
-    console.log(await res.text());
-    throw new Error("Failed to fetch GitHub data");
-  }
+if (!res.ok) {
+  console.log(await res.text());
+
+  return {
+    public_repos: 0,
+    followers: 0,
+    following: 0,
+    avatar_url: "",
+    html_url: `https://github.com/${github.username}`,
+    name: github.username,
+  };
+}
 
   return res.json();
 }
@@ -41,7 +49,7 @@ const res = await fetch(
 );
 
 if (!res.ok) {
-  throw new Error("Failed to fetch languages");
+  return [];
 }
 
 const repos = await res.json();
@@ -80,8 +88,11 @@ export async function getGithubStats() {
   );
 
   if (!res.ok) {
-    throw new Error("Failed to fetch GitHub stats");
-  }
+  return {
+    totalStars: 0,
+    totalForks: 0,
+  };
+}
 
   const repos = await res.json();
 
