@@ -9,7 +9,7 @@ import {
   SiGit,
   SiGithub,
   SiFigma,
-  SiVisualstudiocode,
+
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
