@@ -57,6 +57,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+
   openGraph: {
   title: "Sumaiya Sarhand Marjiya | Full Stack Developer",
   description:
