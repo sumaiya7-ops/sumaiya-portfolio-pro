@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Providers } from "@/components/providers/theme-provider";
 import "./globals.css";
+import Script from "next/script";
 
 
 const geistSans = Geist({
@@ -98,6 +99,50 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
+        <Script
+  id="structured-data"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+
+      name: "Sumaiya Sarhand Marjiya",
+
+      url: "https://sumaiya-portfolio-pro.vercel.app",
+
+      image: "https://sumaiya-portfolio-pro.vercel.app/images/og-image.png",
+
+      jobTitle: "Full Stack Software Engineer",
+
+      email: "mailto:sumaiyakookie307@gmail.com",
+
+      sameAs: [
+        "https://github.com/sumaiya7-ops",
+        "https://www.linkedin.com/in/sumaiya-sorhad",
+      ],
+
+      knowsAbout: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Tailwind CSS",
+        "REST API",
+        "JavaScript",
+      ],
+
+      alumniOf: [
+        {
+          "@type": "CollegeOrUniversity",
+          name: "Jatiya Kabi Kazi Nazrul Islam University",
+        },
+      ],
+    }),
+  }}
+/>
       </body>
     </html>
   );
