@@ -25,6 +25,10 @@ export const metadata: Metadata = {
 
   description:
     "Full Stack Developer specializing in Next.js, React, TypeScript, Node.js, Express, MongoDB and modern web applications. Explore my portfolio, projects and software engineering journey.",
+    
+    verification: {
+  google: "ttHgumCtX6sE613yMKaiIUiDAd9tnInyzzLjTYbHT08",
+},
 
   keywords: [
     "Sumaiya Sarhand Marjiya",
