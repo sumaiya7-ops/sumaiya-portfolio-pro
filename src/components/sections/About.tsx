@@ -4,9 +4,24 @@ import Container from "@/components/common/Container";
 import { portfolio } from "@/data/portfolio";
 import { education } from "@/data/education";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { about } from "@/data/about";
 
 export default function About() {
+
+  const [repoCount, setRepoCount] = useState(0);
+
+useEffect(() => {
+  async function fetchGithub() {
+    const res = await fetch("https://api.github.com/users/sumaiya7-ops");
+    const data = await res.json();
+
+    setRepoCount(data.public_repos);
+  }
+
+  fetchGithub();
+}, []);
+
   return (
     <section id="about" className="py-28">
       <Container>
@@ -55,11 +70,11 @@ About Me
 </p>
 
 <h3 className="mt-2 text-3xl font-black text-white">
-Sumaiya Sarhand Marjiya
+{portfolio.name}
 </h3>
 
 <p className="mt-2 text-slate-400">
-LLB Student • Full Stack Developer
+{portfolio.role} • LLB Student
 </p>
 
 </div>
@@ -124,9 +139,9 @@ className="rounded-full border border-indigo-500/20 bg-indigo-500/10 px-4 py-2 t
     </h3>
 
     <p className="mt-4 leading-8 text-slate-400">
-      Building modern web applications using Next.js,
-      React, TypeScript, Node.js and MongoDB while
-      continuously improving architecture and clean coding skills.
+    Building scalable full-stack applications using Next.js,
+React, TypeScript, Node.js, Express.js and MongoDB while
+following clean architecture and industry best practices.
     </p>
 
   </div>
@@ -138,8 +153,8 @@ className="rounded-full border border-indigo-500/20 bg-indigo-500/10 px-4 py-2 t
     <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-center">
 
       <h4 className="text-4xl font-black text-indigo-400">
-        {portfolio.projects}
-      </h4>
+  {repoCount}+
+</h4>
 
       <p className="mt-2 text-slate-400">
         Projects Built
@@ -171,13 +186,12 @@ className="rounded-full border border-indigo-500/20 bg-indigo-500/10 px-4 py-2 t
     </p>
 
     <h3 className="mt-3 text-2xl font-bold text-white">
-      Open to Opportunities
+      Open to Global Remote Opportunities
     </h3>
 
     <p className="mt-4 leading-8 text-slate-300">
-      Currently looking for internships,
-      junior frontend roles and remote
-      full-stack opportunities.
+      Available for Full Stack Software Engineering,
+Frontend Engineering and Global Remote Opportunities.
     </p>
 
   </div>
@@ -187,7 +201,7 @@ className="rounded-full border border-indigo-500/20 bg-indigo-500/10 px-4 py-2 t
 <div className="mt-16 rounded-3xl border border-indigo-500/20 bg-gradient-to-r from-indigo-500/10 via-violet-500/10 to-cyan-500/10 p-8 text-center backdrop-blur-xl">
 
   <h3 className="text-2xl font-bold text-white">
-    "Learning Never Stops."
+    "Building software is about solving real-world problems with elegant solutions."
   </h3>
 
   <p className="mx-auto mt-4 max-w-3xl leading-8 text-slate-300">
