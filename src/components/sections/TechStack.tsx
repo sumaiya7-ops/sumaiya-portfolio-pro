@@ -12,7 +12,7 @@ import {
 export default function TechStack() {
   return (
     <section
-  id="tech"
+    id="tech-stack"
   className="relative overflow-hidden py-28"
 >
   <div className="absolute left-1/2 top-40 -z-10 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-indigo-500/10 blur-[140px]" />

@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Container from "@/components/common/Container";
 
-export default function Timeline() {
+export default function Experience() {
   return (
     <section
-      id="timeline"
+      id="experience"
       className="relative overflow-hidden py-28"
     >
       {/* Background Glow */}
