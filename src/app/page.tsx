@@ -4,7 +4,7 @@ import About from "@/components/sections/About";
 import TechStack from "@/components/sections/TechStack";
 import Projects from '@/components/sections/Projects';
 import GitHub from "@/components/sections/GitHub";
-import Timeline from "@/components/sections/Timeline";
+import Education from '@/components/sections/Education';
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 import BackToTop from "@/components/common/BackToTop";
@@ -17,7 +17,7 @@ export default function HomePage() {
       <Navbar />
        <Hero />
        <About />
-       <Timeline />
+       <Education />
        <WhyHireMe />
        <TechStack />
        <Projects />

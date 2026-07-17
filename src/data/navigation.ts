@@ -11,10 +11,10 @@ export const navigation = [
     name: "Projects",
     href: "#projects",
   },
-   {
-    name: "Experience",
-    href: "#experience",
-  },
+ {
+  name: "Education",
+  href: "#education",
+},
   {
     name: "Tech Stack",
     href: "#tech-stack",
