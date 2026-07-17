@@ -4,7 +4,6 @@ export const portfolio = {
   location: "Bangladesh",
   available: true,
   experience: "1+",
-  projects: "30+",
   techStacks: "15+",
   email: "sumaiyakookie307@gmail.com",
   github: "https://github.com/sumaiya7-ops",

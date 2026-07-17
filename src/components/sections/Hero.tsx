@@ -1,5 +1,5 @@
 'use client';
-
+import { useEffect, useState } from "react";
 import Container from '@/components/common/Container';
 import { Button } from "@/components/ui/Button";
 import BackgroundGlow from "@/components/ui/BackgroundGlow";
@@ -9,6 +9,15 @@ import { motion } from "framer-motion";
 
 
 export default function Hero() {
+
+  const [githubUser, setGithubUser] = useState<any>(null);
+
+useEffect(() => {
+  fetch("/api/github")
+    .then((res) => res.json())
+    .then((data) => setGithubUser(data));
+}, []);
+
   const fadeUp = {
   hidden: {
     opacity: 0,
@@ -54,7 +63,7 @@ export default function Hero() {
     </span>
 
     <span className="text-xs font-bold uppercase tracking-[0.25em] text-indigo-300">
-      Available For Work
+      Open To Global Remote Opportunities
     </span>
 
  </motion.div>
@@ -72,11 +81,11 @@ export default function Hero() {
 
     <span className="block text-indigo-400">
 
-      Exceptional Digital
+      Scalable Web
 
     </span>
 
-    Experiences.
+    Applications.
 
 </motion.h1>
 
@@ -108,7 +117,7 @@ export default function Hero() {
   className="mt-10 flex flex-wrap items-center gap-4"
 >
   <Button size="lg">
-    Book a Call
+    View Projects
   </Button>
 
   <Button variant="outline" size="lg">
@@ -127,7 +136,7 @@ export default function Hero() {
 >
   <div>
     <h3 className="text-3xl font-black text-white">
-      {portfolio.projects}
+       {githubUser?.public_repos ?? "--"}+
     </h3>
 
     <p className="text-xs uppercase tracking-[0.2em] text-slate-400">
@@ -146,12 +155,9 @@ export default function Hero() {
   </div>
 
   <div>
-    <h3 className="text-3xl font-black text-white">
-      100%
-    </h3>
-
+    
     <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
-      Commitment
+      Open To Work
     </p>
   </div>
 
@@ -277,7 +283,7 @@ export default function Hero() {
       </p>
 
       <h4 className="mt-1 text-2xl font-black text-white">
-         {portfolio.experience} Years
+      2025 — Present
       </h4>
 
     </div>
