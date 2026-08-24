@@ -166,10 +166,6 @@ export default function Education() {
 
         <div className="relative mx-auto mt-16 max-w-4xl sm:mt-20">
 
-          {/* Timeline Line */}
-
-          <div className="absolute bottom-0 left-5 top-0 w-px bg-gradient-to-b from-transparent via-indigo-500/40 to-transparent sm:left-1/2 sm:-translate-x-1/2" />
-
           <div className="space-y-10 sm:space-y-14">
 
             {journeyItems.map((item, index) => {
@@ -197,22 +193,9 @@ export default function Education() {
                   }}
                   className="relative"
                 >
-
-                  {/* Timeline Dot */}
-
-                  <div className="absolute left-5 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 sm:left-1/2">
-
-                    <div className="flex h-9 w-9 items-center justify-center rounded-full border border-indigo-400/40 bg-slate-950 shadow-[0_0_30px_rgba(99,102,241,0.35)]">
-
-                      <div className="h-2.5 w-2.5 rounded-full bg-gradient-to-r from-indigo-400 to-cyan-400 shadow-[0_0_15px_rgba(99,102,241,0.9)]" />
-
-                    </div>
-
-                  </div>
-
                   {/* Card */}
 
-                  <div className="ml-12 sm:ml-0">
+                  <div>
 
                     <div className="mx-auto max-w-3xl">
 
