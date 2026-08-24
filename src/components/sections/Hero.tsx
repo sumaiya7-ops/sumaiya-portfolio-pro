@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 import BackgroundGlow from "@/components/ui/BackgroundGlow";
 import GridPattern from "@/components/ui/GridPattern";
 import { portfolio } from "@/data/portfolio";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 type GithubUser = {
   public_repos?: number;
@@ -39,21 +39,21 @@ export default function Hero() {
     fetchGithubUser();
   }, []);
 
-  const fadeUp = {
-    hidden: {
-      opacity: 0,
-      y: 40,
+const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 40,
+  },
+  visible: (delay = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      delay,
+      ease: "easeOut",
     },
-    visible: (delay = 0) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        delay,
-        ease: "easeOut",
-      },
-    }),
-  };
+  }),
+};
 
   const techStackCount = Array.isArray(portfolio.techStacks)
     ? portfolio.techStacks.length
