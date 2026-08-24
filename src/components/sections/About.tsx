@@ -218,7 +218,7 @@ export default function About() {
                 </div>
 
                 <h4 className="mt-4 text-4xl font-black text-cyan-400">
-                  {techStackCount}+
+                  {techStackCount}
                 </h4>
 
                 <p className="mt-2 text-xs font-medium uppercase tracking-[0.18em] text-slate-400">
