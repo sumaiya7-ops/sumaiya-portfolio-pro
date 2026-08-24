@@ -19,9 +19,7 @@ export default function Projects() {
 
 <div className="absolute bottom-0 left-0 -z-10 h-80 w-80 rounded-full bg-violet-500/10 blur-[140px]" />
       <Container>
-        {/* Section Heading */}
-
-     
+      
      <motion.div
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
