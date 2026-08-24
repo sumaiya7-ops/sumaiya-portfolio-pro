@@ -177,7 +177,7 @@ const fadeUp: Variants = {
               {/* Tech Stack */}
               <div>
                 <h3 className="text-3xl font-black text-white">
-                  {techStackCount}+
+                  {techStackCount}
                 </h3>
 
                 <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-400 sm:text-xs">
