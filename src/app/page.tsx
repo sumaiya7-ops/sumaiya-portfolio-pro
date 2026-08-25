@@ -10,6 +10,8 @@ import Footer from "@/components/sections/Footer";
 import BackToTop from "@/components/common/BackToTop";
 import AIChat from "@/components/sections/AIChat";
 import WhyHireMe from "@/components/home/WhyHireMe";
+import Services from "@/components/sections/Services";
+
 
 export default function HomePage() {
   return (
@@ -17,12 +19,12 @@ export default function HomePage() {
       <Navbar />
        <Hero />
        <About />
-       <Education />
-       <WhyHireMe />
-       <TechStack />
+       <Services />
+       <TechStack />       
        <Projects />
-       <GitHub />
-       
+       <WhyHireMe />
+       <Education />
+       <GitHub />       
        <AIChat />
        <Contact />
        <Footer />
