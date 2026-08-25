@@ -16,11 +16,7 @@ export const navigation = [
     name: "About",
     href: "#about",
   },
-  {
-    name: "Tech Stack"
-    href: "#tech stack",    
-  },
- 
+
   {
     name: "Contact",
     href: "#contact",
