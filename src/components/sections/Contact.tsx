@@ -64,7 +64,7 @@ const sendEmail = async (e: React.FormEvent) => {
       id="contact"
       className="relative overflow-hidden py-28"
     >
-      {/* Background Glow */}
+   
       <div className="absolute left-1/2 top-20 -z-10 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-indigo-500/10 blur-[150px]" />
 
       <Container>
