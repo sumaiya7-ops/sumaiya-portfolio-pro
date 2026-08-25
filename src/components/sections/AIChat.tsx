@@ -171,7 +171,7 @@ setMessages((prev) => [
           </p>
         </motion.div>
 
-        {/* Chat Window */}
+     
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

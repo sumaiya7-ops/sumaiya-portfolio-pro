@@ -1,6 +1,6 @@
 import {
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiJavascript,
   SiReact,
   SiNextdotjs,
@@ -27,7 +27,7 @@ export const techStack = {
     {
       name: "CSS",
       level: 90,
-      icon: SiCss3,
+      icon: SiCss,
     },
     {
       name: "JavaScript",
@@ -103,7 +103,7 @@ export const techStack = {
     {
       name: "Vercel",
       level: 85,
-      icon: VscVscode,
+      icon: SiGithub,
     },
   ],
 };
