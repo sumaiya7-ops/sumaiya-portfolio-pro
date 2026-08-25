@@ -110,7 +110,7 @@ export default function Education() {
 
   return (
     <section
-      id="education"
+     
       className="relative overflow-hidden py-24 sm:py-28 lg:py-32"
     >
       {/* Background Glow */}
