@@ -13,7 +13,6 @@ import {
   SiGithub,
   SiFigma,
   SiFirebase,
-  SiVercel,
 } from "react-icons/si";
 
 import { VscVscode } from "react-icons/vsc";
@@ -104,7 +103,7 @@ export const techStack = {
     {
       name: "Vercel",
       level: 85,
-      icon: SiVercel,
+      icon: VscVscode,
     },
   ],
 };
